@@ -1,0 +1,7 @@
+wav_enc.h
+
+A simple header file, containing the definition for a class that writes to 16-bit and 24-bit WAVE audio files. Released under the MIT License.
+
+See wav_enc_example.cpp for an example of its usage.
+
+A compiler supporting C++11 is required, such as gcc >=4.6. Make sure to use teh -std=c++11 compiler flag.
