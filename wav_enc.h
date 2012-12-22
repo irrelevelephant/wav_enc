@@ -56,10 +56,10 @@ public:
 	{
 	}
 
-	WavFile( const char* file,
-	         bit_depth_t bit_depth = WAV_16BIT,
-	         channels_t channels = WAV_MONO,
-	         std::uint32_t sample_rate = 44100 ) :
+	explicit WavFile( const char* file,
+	                  bit_depth_t bit_depth = WAV_16BIT,
+	                  channels_t channels = WAV_MONO,
+	                  std::uint32_t sample_rate = 44100 ) :
 		WavFile()
 	{
 		open( file, bit_depth, channels, sample_rate );
