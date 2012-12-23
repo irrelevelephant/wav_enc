@@ -168,7 +168,7 @@ public:
 
 	void write_mono_16bit( double sample )
 	{
-		using namespace std;
+		using std::int16_t;
 		int16_t data = static_cast<int16_t>( 0x7fff * sample );
 		write_mono_16bit( data );
 	}
